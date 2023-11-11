@@ -11,29 +11,42 @@
         padding: 0;
      }
      li{
-        list-style: none;
+      list-style: none;
      }
-     .box{
-        display: flex;
-        justify-content: space-between;
-        height: 200px;
-        border: 1px solid #000;
-     }
-     .box div{
-        /* float: left;
-        margin: 10px; */
-        width: 100px;
-        height: 100px;
-        background-color: pink;
-     }
+      .box{
+         display: flex;
+         height: 300px;
+         border: 1px solid #000;
+      }
+      .box div{
+         height: 200px;
+         margin: 0 20px;
+         background-color: pink;
+      }
+      .box div:nth-child(1){
+         width: 50px;
+      }
+      .box div:nth-child(2){
+         flex: 1;
+      }
+      .box div:nth-child(3){
+         flex: 1;
+      }
+
+
+
+
+
+     
     
     </style>
 </head>
 <body>
-   <div class="box">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
+ <div class="box">
+   <div>1</div>
+   <div>2</div>
+   <div>3</div>
+ </div>
 
     
 
@@ -41,4 +54,4 @@
    </div>
 </body>
 </html>
-<!-- 3-2 Flex伸缩布局 -->
+<!-- 3-3  小兔鲜儿移动端 -->
