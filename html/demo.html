@@ -5,33 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../../../vscod/bootstrap/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../font_4326079_hbwzg0w8w1l/iconfont.css">
     <style>
-     *{
-        margin: 0;
-        padding: 0;
-     }
-     li{
-      list-style: none;
-     }
-      .box{
+      body{
+         background-color: #f7f7f7;
+      }
+      a{
+         list-style: none;
+      }
+      .red{
+         color: red;
+      }
+      .pannel{
+         margin-bottom: 10px;
+         background-color: #fff;
+         border-radius: 5px;
+      }
+      .main{
+         padding: 12px 11px 80px;
+      }
+      .user_msg{
          display: flex;
-         height: 300px;
-         border: 1px solid #000;
+         align-items: center;
+         padding: 15px 0 15px 11px;
       }
-      .box div{
-         height: 200px;
-         margin: 0 20px;
-         background-color: pink;
+      .user_msg .location{
+         width: 30px;
+         height: 30px;
       }
-      .box div:nth-child(1){
-         width: 50px;
-      }
-      .box div:nth-child(2){
-         flex: 1;
-      }
-      .box div:nth-child(3){
-         flex: 1;
-      }
+    .user_msg .user .bottom{
+      margin-top: 5px;
+      font-size: 12px;
+
+    }
+    .user_msg .more{
+      width: 44px;
+      height: 44px;
+      text-align: center;
+      line-height: 44px;
+      color: #808080;
+
+    }
+    .goods{
+      display: flex;
+      padding: 11px 0 11px 11px;
+    }
+    img{
+      width: 100%;
+      /* height: 100%; */
+    }
+    .goods .pic{
+      width: 85px;
+      height: 85px;
+      margin-right: 10px;
+    }
+    .goods .info{
+      flex: 1;
+    }
+    .goods .count{
+      width: 44px;
+      height: 44px;
+      background-color: pink;
+      text-align: center;
+      line-height: 44px;
+    }
+    .pay{
+      /* display: flex;
+      justify-content: space-around; */
+      position: fixed;
+      left: 0;
+      bottom: 0;
+    }
+    .pay .right{
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      margin-right: 10px;
+    }
 
 
 
@@ -42,16 +93,30 @@
     </style>
 </head>
 <body>
- <div class="box">
-   <div>1</div>
-   <div>2</div>
-   <div>3</div>
- </div>
+<div class="main">
+   <div class="panne user_msg"></div>
 
-    
-
-
+</div>
+<div class="pannel goods">
+   <div class="pic">
+     <a href="#"> <img src="./../images/01fec9b60e48450eadf2d64dde7138e9.jpg" alt=""></a>
    </div>
+   <div class="info">2</div>
+   <div class="count">
+      <i class="iconfont icon-close "></i>
+      <span>1</span>
+   </div>
+</div>
+
+<div class="pay">
+   <div class="left">
+      <span class="red">￥<i>266.00</i></span>
+      
+   </div>
+   <div class="right">
+      <a href="#">去支付</a>
+   </div>
+</div>
 </body>
 </html>
-<!-- 3-3  小兔鲜儿移动端 -->
+<!-- 3-3  小兔鲜儿移动端 04-->
